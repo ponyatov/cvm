@@ -1,0 +1,8 @@
+/** @page compiler Compiler
+
+Demo implementation (`cvm.exe` emulator) contains **embedded compiler**
+was written using `flex/bison` tools.
+
+You can use emulator as 
+
+*/

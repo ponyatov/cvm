@@ -1,0 +1,51 @@
+/** @page platforms Supported platforms
+
+- @ref x86 x86/amd64
+  - @ref Linux
+  - @ref Windows
+- @ref RT5350F (MIPS 32 v2, 350 MHz)
+  - router SoC with up to 5 ethernet ports
+  - USB 2.0 host
+  - WiFi
+  - @ref HLK-RM04 embedded module build on top of @ref RT5350F 
+    - @ref RIDmodem (router for IoT systems)
+      - GSM modem
+      - 2 ethernet ports
+      - WiFi /optional/
+      - UART
+      - RS485 master
+
+@section RT5350F Ralink RT5350F SoC
+
+- router SoC
+  - WiFi
+  - up to 5 ethernet ports
+- CPU: MIPS 32 360 MHz
+- USB 2.0 host
+
+@subsection HLK-RM04 Hi-Link HLK-RM04 v.2
+
+http://wiki.openwrt.org/toh/hilink/hlk-rm04
+
+![](http://ae01.alicdn.com/kf/HTB1e7HpJpXXXXa_XVXXq6xXFXXXo/221431006/HTB1e7HpJpXXXXa_XVXXq6xXFXXXo.jpg?size=124748&height=1000&width=1000&hash=c990a86be88d8f056211c6a07a42bee3)
+
+- CPU: @ref RT5350F
+- Flash: 8M (v.2)
+- RAM: 32M (v.2)
+- 2x Ethernet 100Mbit
+- USB 2.0 host
+
+@subsubsection RIDmodem RID modem
+
+Commercial module for industrial and IoT automation applications.
+      
+- GSM modem
+- 2 ethernet ports
+- WiFi /optional/
+- UART
+- RS485 master
+
+http://icbcom.ru/ru/tovar/rid-communication-modem/
+![](https://icbcom.ru/wp-content/uploads/2018/05/RID-modem-200x200.jpg)
+
+*/

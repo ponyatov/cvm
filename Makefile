@@ -1,11 +1,16 @@
-all: ./vm.exe
-	./vm.exe < demo.script
+all: ./cvm.exe
+	./cvm.exe < demo.script
 
-C = vm.c
-H = vm.h
+C = vm.c parser.tab.c lex.yy.c
+H = vm.h parser.tab.h
 
-./vm.exe: $(C) $(H)
+./cvm.exe: $(C) $(H)
 	$(CC) -o $@ $(C)
 	
+lex.yy.c: lexer.lex
+	flex $<
+parser.tab.c: parser.yacc
+	bison -o $@ $<	
+		
 doxy:
-	rm -rf docs ; doxygen doxy.gen
+	rm -rf docs ; doxygen doxy.gen 1>/dev/null

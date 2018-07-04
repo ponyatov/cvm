@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>cvm: light Stack Virtual Machine in C for scripting on embedded systems: vm.h File Reference</title>
+<title>cvm: vm.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,8 +25,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">cvm: light Stack Virtual Machine in C for scripting on embedded systems
+   <div id="projectname">cvm
    </div>
+   <div id="projectbrief">light Stack Virtual Machine in C for scripting on embedded systems</div>
   </td>
  </tr>
  </tbody>
@@ -112,10 +113,13 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7855cef2909876811f522207b5f14e05"><td class="memItemLeft" align="right" valign="top"><a id="a7855cef2909876811f522207b5f14e05"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vm_8h.html#a7855cef2909876811f522207b5f14e05">bc_interpret</a> ()</td></tr>
-<tr class="memdesc:a7855cef2909876811f522207b5f14e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">byte-code interpreter <br /></td></tr>
-<tr class="separator:a7855cef2909876811f522207b5f14e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7855cef2909876811f522207b5f14e05"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga7855cef2909876811f522207b5f14e05">bc_interpret</a> ()</td></tr>
+<tr class="memdesc:ga7855cef2909876811f522207b5f14e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">byte-code interpreter <br /></td></tr>
+<tr class="separator:ga7855cef2909876811f522207b5f14e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:ga0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">emulator entry point  <a href="group__vm.html#ga0ddf1224851353fc92bfbff6f499fa97">More...</a><br /></td></tr>
+<tr class="separator:ga0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa40b27ae32d6d1ae7160bd6256e08eb8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html#gaa40b27ae32d6d1ae7160bd6256e08eb8">yylex</a> ()</td></tr>
 <tr class="memdesc:gaa40b27ae32d6d1ae7160bd6256e08eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">lexer: fetch next token  <a href="group__parser.html#gaa40b27ae32d6d1ae7160bd6256e08eb8">More...</a><br /></td></tr>
 <tr class="separator:gaa40b27ae32d6d1ae7160bd6256e08eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,22 +133,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad8e76a4834c5fdcf094d5478cb239bf7"><td class="memItemLeft" align="right" valign="top"><a id="ad8e76a4834c5fdcf094d5478cb239bf7"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vm_8h.html#ad8e76a4834c5fdcf094d5478cb239bf7">M</a> [<a class="el" href="group__config.html#gad197097190188a1227ecf9ae73cc79fb">Msz</a>]</td></tr>
-<tr class="memdesc:ad8e76a4834c5fdcf094d5478cb239bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">main memory image <br /></td></tr>
-<tr class="separator:ad8e76a4834c5fdcf094d5478cb239bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a8692bd83f483740fcc4bc7ca397618"><td class="memItemLeft" align="right" valign="top"><a id="a8a8692bd83f483740fcc4bc7ca397618"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vm_8h.html#a8a8692bd83f483740fcc4bc7ca397618">Ip</a></td></tr>
-<tr class="memdesc:a8a8692bd83f483740fcc4bc7ca397618"><td class="mdescLeft">&#160;</td><td class="mdescRight">instruction pointer <br /></td></tr>
-<tr class="separator:a8a8692bd83f483740fcc4bc7ca397618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d839463b6580556c411298b9b34921"><td class="memItemLeft" align="right" valign="top"><a id="ae3d839463b6580556c411298b9b34921"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vm_8h.html#ae3d839463b6580556c411298b9b34921">Sp</a></td></tr>
-<tr class="memdesc:ae3d839463b6580556c411298b9b34921"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack pointer <br /></td></tr>
-<tr class="separator:ae3d839463b6580556c411298b9b34921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a952d4e944c323fa833d1945f619048ae"><td class="memItemLeft" align="right" valign="top"><a id="a952d4e944c323fa833d1945f619048ae"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vm_8h.html#a952d4e944c323fa833d1945f619048ae">Fp</a></td></tr>
-<tr class="memdesc:a952d4e944c323fa833d1945f619048ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack frame pointer <br /></td></tr>
-<tr class="separator:a952d4e944c323fa833d1945f619048ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8e76a4834c5fdcf094d5478cb239bf7"><td class="memItemLeft" align="right" valign="top">
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#gad8e76a4834c5fdcf094d5478cb239bf7">M</a> [<a class="el" href="group__config.html#gad197097190188a1227ecf9ae73cc79fb">Msz</a>]</td></tr>
+<tr class="memdesc:gad8e76a4834c5fdcf094d5478cb239bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">main memory image (byte-level addressed) <br /></td></tr>
+<tr class="separator:gad8e76a4834c5fdcf094d5478cb239bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a8692bd83f483740fcc4bc7ca397618"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga8a8692bd83f483740fcc4bc7ca397618">Ip</a></td></tr>
+<tr class="memdesc:ga8a8692bd83f483740fcc4bc7ca397618"><td class="mdescLeft">&#160;</td><td class="mdescRight">instruction pointer <br /></td></tr>
+<tr class="separator:ga8a8692bd83f483740fcc4bc7ca397618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3d839463b6580556c411298b9b34921"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#gae3d839463b6580556c411298b9b34921">Sp</a></td></tr>
+<tr class="memdesc:gae3d839463b6580556c411298b9b34921"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack pointer <br /></td></tr>
+<tr class="separator:gae3d839463b6580556c411298b9b34921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga952d4e944c323fa833d1945f619048ae"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga952d4e944c323fa833d1945f619048ae">Fp</a></td></tr>
+<tr class="memdesc:ga952d4e944c323fa833d1945f619048ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack frame pointer <br /></td></tr>
+<tr class="separator:ga952d4e944c323fa833d1945f619048ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e36364965360da7b7cdfc2188e0af84"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html#ga5e36364965360da7b7cdfc2188e0af84">yylineno</a></td></tr>
 <tr class="memdesc:ga5e36364965360da7b7cdfc2188e0af84"><td class="mdescLeft">&#160;</td><td class="mdescRight">current line number for syntax reports <br /></td></tr>

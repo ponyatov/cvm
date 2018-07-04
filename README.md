@@ -8,7 +8,8 @@ as **script host engine** for very small embedded systems,<br>
 build say on Cortex-M microcontrollers with a few Kb of RAM.
 You can use it if you can admit slower execution but<br>
 more stable and secure code and want some cool things like 
-multitasking or clustering for a low price (primarily **good for user scripting**).
+multitasking, clustering and supervising for a low price
+(primarily **good for user scripting**).
 
 - blogpost:
   - http://ponyatov.quora.com/On-computer-language-design-Low-level-Virtual-stack-Machine-in-C

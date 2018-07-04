@@ -24,7 +24,10 @@
 #include <assert.h>
 #include <stdint.h>
 
-/// main memory image
+/// @defgroup vm Virtual Machine
+/// @{
+
+/// main memory image (byte-level addressed)
 extern uint8_t M[Msz];
 /// instruction pointer
 extern uint32_t Ip;
@@ -36,6 +39,14 @@ extern uint32_t Fp;
 /// byte-code interpreter
 extern void bc_interpret();
 
+/// @brief emulator entry point
+/// @param[in] argc numbers of arguments 1+
+/// @param[in] argv program arguments
+/// - `argv[0]` full path of program executable file
+extern int main(int argc, char *argv[]);
+
+/// @}
+
 /// @defgroup opcode Command set opcodes
 /// @{
 
@@ -46,7 +57,10 @@ extern void bc_interpret();
 
 /// @}
 
+/// @defgroup compiler Compiler
+
 /// @defgroup parser lexer/parser interface
+/// @ingroup compiler
 /// @details flex/bison powered
 /// @{
 

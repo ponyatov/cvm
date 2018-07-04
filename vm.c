@@ -14,6 +14,11 @@ int main(int argc, char *argv[]) {
 	return yyparse();
 }
 
+void yyerror(char* msg) {
+	fprintf(stderr,"\n\n%i: %s [%s]\n\n",yylineno,msg,yytext);
+	abort();
+}
+
 void bc_interpret() { for (;;) {		// infinitive byte-code interpreter loop
 
 	// fetch

@@ -1,7 +1,14 @@
 var NAVTREE =
 [
-  [ "cvm: light Stack Virtual Machine in C for scripting on embedded systems", "index.html", [
-    [ "cvm", "index.html", null ],
+  [ "cvm", "index.html", [
+    [ "Compiler", "compiler.html", null ],
+    [ "Supported platforms", "platforms.html", [
+      [ "Ralink RT5350F SoC", "platforms.html#RT5350F", [
+        [ "Hi-Link HLK-RM04 v.2", "platforms.html#HLK-RM04", [
+          [ "RID modem", "platforms.html#RIDmodem", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
@@ -17,7 +24,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"files.html"
+"compiler.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

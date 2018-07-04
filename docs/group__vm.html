@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>cvm: vm.c File Reference</title>
+<title>cvm: Virtual Machine</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -55,7 +55,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('vm_8c.html','');});
+$(document).ready(function(){initNavTree('group__vm.html','');});
 </script>
 <div id="doc-content">
 <div class="header">
@@ -63,57 +63,94 @@ $(document).ready(function(){initNavTree('vm_8c.html','');});
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">vm.c File Reference</div>  </div>
+<div class="title">Virtual Machine</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="vm_8h_source.html">vm.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for vm.c:</div>
-<div class="dyncontent">
-<div class="center"><img src="vm_8c__incl.png" border="0" usemap="#vm_8c" alt=""/></div>
-<map name="vm_8c" id="vm_8c">
-<area shape="rect" id="node2" href="vm_8h.html" title="Configuration here. " alt="" coords="143,80,193,107"/>
-</map>
-</div>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
-<tr class="memdesc:ga0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">emulator entry point  <a href="group__vm.html#ga0ddf1224851353fc92bfbff6f499fa97">More...</a><br /></td></tr>
-<tr class="separator:ga0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5137128cec8264b305aaefaab68466c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html#ga5137128cec8264b305aaefaab68466c0">yyerror</a> (char *msg)</td></tr>
-<tr class="memdesc:ga5137128cec8264b305aaefaab68466c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">syntax error callback  <a href="group__parser.html#ga5137128cec8264b305aaefaab68466c0">More...</a><br /></td></tr>
-<tr class="separator:ga5137128cec8264b305aaefaab68466c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7855cef2909876811f522207b5f14e05"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:ga7855cef2909876811f522207b5f14e05"><td class="memItemLeft" align="right" valign="top"><a id="ga7855cef2909876811f522207b5f14e05"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga7855cef2909876811f522207b5f14e05">bc_interpret</a> ()</td></tr>
 <tr class="memdesc:ga7855cef2909876811f522207b5f14e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">byte-code interpreter <br /></td></tr>
 <tr class="separator:ga7855cef2909876811f522207b5f14e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:ga0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">emulator entry point  <a href="#ga0ddf1224851353fc92bfbff6f499fa97">More...</a><br /></td></tr>
+<tr class="separator:ga0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:gad8e76a4834c5fdcf094d5478cb239bf7"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:gad8e76a4834c5fdcf094d5478cb239bf7"><td class="memItemLeft" align="right" valign="top"><a id="gad8e76a4834c5fdcf094d5478cb239bf7"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#gad8e76a4834c5fdcf094d5478cb239bf7">M</a> [<a class="el" href="group__config.html#gad197097190188a1227ecf9ae73cc79fb">Msz</a>]</td></tr>
 <tr class="memdesc:gad8e76a4834c5fdcf094d5478cb239bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">main memory image (byte-level addressed) <br /></td></tr>
 <tr class="separator:gad8e76a4834c5fdcf094d5478cb239bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a8692bd83f483740fcc4bc7ca397618"><td class="memItemLeft" align="right" valign="top">
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga8a8692bd83f483740fcc4bc7ca397618">Ip</a> =0</td></tr>
+<tr class="memitem:ga8a8692bd83f483740fcc4bc7ca397618"><td class="memItemLeft" align="right" valign="top"><a id="ga8a8692bd83f483740fcc4bc7ca397618"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga8a8692bd83f483740fcc4bc7ca397618">Ip</a></td></tr>
 <tr class="memdesc:ga8a8692bd83f483740fcc4bc7ca397618"><td class="mdescLeft">&#160;</td><td class="mdescRight">instruction pointer <br /></td></tr>
 <tr class="separator:ga8a8692bd83f483740fcc4bc7ca397618"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3d839463b6580556c411298b9b34921"><td class="memItemLeft" align="right" valign="top">
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#gae3d839463b6580556c411298b9b34921">Sp</a> =0</td></tr>
+<tr class="memitem:gae3d839463b6580556c411298b9b34921"><td class="memItemLeft" align="right" valign="top"><a id="gae3d839463b6580556c411298b9b34921"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#gae3d839463b6580556c411298b9b34921">Sp</a></td></tr>
 <tr class="memdesc:gae3d839463b6580556c411298b9b34921"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack pointer <br /></td></tr>
 <tr class="separator:gae3d839463b6580556c411298b9b34921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga952d4e944c323fa833d1945f619048ae"><td class="memItemLeft" align="right" valign="top">
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga952d4e944c323fa833d1945f619048ae">Fp</a> =0</td></tr>
+<tr class="memitem:ga952d4e944c323fa833d1945f619048ae"><td class="memItemLeft" align="right" valign="top"><a id="ga952d4e944c323fa833d1945f619048ae"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga952d4e944c323fa833d1945f619048ae">Fp</a></td></tr>
 <tr class="memdesc:ga952d4e944c323fa833d1945f619048ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack frame pointer <br /></td></tr>
 <tr class="separator:ga952d4e944c323fa833d1945f619048ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga0ddf1224851353fc92bfbff6f499fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>emulator entry point </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">argc</td><td>numbers of arguments 1+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">argv</td><td>program arguments<ul>
+<li><code>argv[0]</code> full path of program executable file </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__vm_ga0ddf1224851353fc92bfbff6f499fa97_cgraph.png" border="0" usemap="#group__vm_ga0ddf1224851353fc92bfbff6f499fa97_cgraph" alt=""/></div>
+<map name="group__vm_ga0ddf1224851353fc92bfbff6f499fa97_cgraph" id="group__vm_ga0ddf1224851353fc92bfbff6f499fa97_cgraph">
+<area shape="rect" id="node2" href="group__parser.html#gacd8617a8f2ac0de8bc1cc032cf449e19" title="syntax parser " alt="" coords="104,5,172,32"/>
+</map>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="vm_8c.html">vm.c</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
