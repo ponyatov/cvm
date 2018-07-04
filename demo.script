@@ -1,0 +1,6 @@
+# line comment
+
+nop
+halt
+
+.go		# start compiled bytecode .directive
