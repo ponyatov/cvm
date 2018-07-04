@@ -60,7 +60,9 @@ $(document).ready(function(){initNavTree('group__compiler.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a>  </div>
+<a href="#groups">Modules</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Compiler</div>  </div>
 </div><!--header-->
@@ -70,17 +72,97 @@ Collaboration diagram for Compiler:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__compiler.png" border="0" alt="" usemap="#group____compiler"/>
 <map name="group____compiler" id="group____compiler">
-<area shape="rect" id="node2" href="group__parser.html" title="lexer/parser interface" alt="" coords="128,5,272,32"/>
+<area shape="rect" id="node2" href="group__sym.html" title="Symbol table" alt="" coords="151,5,249,32"/>
+<area shape="rect" id="node3" href="group__parser.html" title="lexer/parser interface" alt="" coords="128,56,272,83"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
+<tr class="memitem:group__sym"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sym.html">Symbol table</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__parser"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__parser.html">lexer/parser interface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga35303b8750609d16688bcb3e806bcaa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__compiler.html#ga35303b8750609d16688bcb3e806bcaa5">C8</a> (uint8_t opcode)</td></tr>
+<tr class="memdesc:ga35303b8750609d16688bcb3e806bcaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">compile byte  <a href="#ga35303b8750609d16688bcb3e806bcaa5">More...</a><br /></td></tr>
+<tr class="separator:ga35303b8750609d16688bcb3e806bcaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadab2ea721a350767b2dd97aacf74e46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__compiler.html#gadab2ea721a350767b2dd97aacf74e46b">C32</a> (uint32_t cell)</td></tr>
+<tr class="memdesc:gadab2ea721a350767b2dd97aacf74e46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">compile 32-bit cell  <a href="#gadab2ea721a350767b2dd97aacf74e46b">More...</a><br /></td></tr>
+<tr class="separator:gadab2ea721a350767b2dd97aacf74e46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga5ee403c18197e7dd5a472f5a3def38b0"><td class="memItemLeft" align="right" valign="top"><a id="ga5ee403c18197e7dd5a472f5a3def38b0"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__compiler.html#ga5ee403c18197e7dd5a472f5a3def38b0">Cp</a></td></tr>
+<tr class="memdesc:ga5ee403c18197e7dd5a472f5a3def38b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">compilation pointer <br /></td></tr>
+<tr class="separator:ga5ee403c18197e7dd5a472f5a3def38b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gadab2ea721a350767b2dd97aacf74e46b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadab2ea721a350767b2dd97aacf74e46b">&#9670;&nbsp;</a></span>C32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C32 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>cell</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compile 32-bit cell </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cell</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__compiler_gadab2ea721a350767b2dd97aacf74e46b_cgraph.png" border="0" usemap="#group__compiler_gadab2ea721a350767b2dd97aacf74e46b_cgraph" alt=""/></div>
+<map name="group__compiler_gadab2ea721a350767b2dd97aacf74e46b_cgraph" id="group__compiler_gadab2ea721a350767b2dd97aacf74e46b_cgraph">
+<area shape="rect" id="node2" href="group__vm.html#ga094bf6955a670cb601260e1892d26b40" title="store 32&#45;bit cell to memory (litle endian) " alt="" coords="100,5,165,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga35303b8750609d16688bcb3e806bcaa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35303b8750609d16688bcb3e806bcaa5">&#9670;&nbsp;</a></span>C8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void C8 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>opcode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>compile byte </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

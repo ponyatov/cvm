@@ -1,6 +1,10 @@
 # line comment
 
-nop
-halt
+		jmp		_entry
 
+_entry:
+		nop
+		halt
+
+.dump
 .go		# start compiled bytecode .directive

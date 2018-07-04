@@ -72,7 +72,7 @@ Include dependency graph for vm.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="vm_8c__incl.png" border="0" usemap="#vm_8c" alt=""/></div>
 <map name="vm_8c" id="vm_8c">
-<area shape="rect" id="node2" href="vm_8h.html" title="Configuration here. " alt="" coords="143,80,193,107"/>
+<area shape="rect" id="node2" href="vm_8h.html" title="Configuration here. " alt="" coords="188,80,239,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -88,6 +88,36 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga7855cef2909876811f522207b5f14e05">bc_interpret</a> ()</td></tr>
 <tr class="memdesc:ga7855cef2909876811f522207b5f14e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">byte-code interpreter <br /></td></tr>
 <tr class="separator:ga7855cef2909876811f522207b5f14e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9feb7476507383309c8e3ff2648016f3"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opcode.html#ga9feb7476507383309c8e3ff2648016f3">nop</a> ()</td></tr>
+<tr class="memdesc:ga9feb7476507383309c8e3ff2648016f3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>NOP/0</code> do nothing <br /></td></tr>
+<tr class="separator:ga9feb7476507383309c8e3ff2648016f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade0430439247877006d7df950f94918a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__opcode.html#gade0430439247877006d7df950f94918a">halt</a> ()</td></tr>
+<tr class="memdesc:gade0430439247877006d7df950f94918a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>HALT/0</code> stop system <br /></td></tr>
+<tr class="separator:gade0430439247877006d7df950f94918a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga094bf6955a670cb601260e1892d26b40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga094bf6955a670cb601260e1892d26b40">M32set</a> (uint32_t addr, uint32_t data)</td></tr>
+<tr class="memdesc:ga094bf6955a670cb601260e1892d26b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">store 32-bit cell to memory (litle endian)  <a href="group__vm.html#ga094bf6955a670cb601260e1892d26b40">More...</a><br /></td></tr>
+<tr class="separator:ga094bf6955a670cb601260e1892d26b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga456f5a5f20aa319597cf52b8077e6b67"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sym.html#ga456f5a5f20aa319597cf52b8077e6b67">symget</a> (char *name)</td></tr>
+<tr class="memdesc:ga456f5a5f20aa319597cf52b8077e6b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">get addr from symbol table  <a href="group__sym.html#ga456f5a5f20aa319597cf52b8077e6b67">More...</a><br /></td></tr>
+<tr class="separator:ga456f5a5f20aa319597cf52b8077e6b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ca0dd5c68ae6fa0d76bc0b24b73d7ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sym.html#ga9ca0dd5c68ae6fa0d76bc0b24b73d7ea">symset</a> (char *name, uint32_t addr)</td></tr>
+<tr class="memdesc:ga9ca0dd5c68ae6fa0d76bc0b24b73d7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">set address in symbol table  <a href="group__sym.html#ga9ca0dd5c68ae6fa0d76bc0b24b73d7ea">More...</a><br /></td></tr>
+<tr class="separator:ga9ca0dd5c68ae6fa0d76bc0b24b73d7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35303b8750609d16688bcb3e806bcaa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__compiler.html#ga35303b8750609d16688bcb3e806bcaa5">C8</a> (uint8_t opcode)</td></tr>
+<tr class="memdesc:ga35303b8750609d16688bcb3e806bcaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">compile byte  <a href="group__compiler.html#ga35303b8750609d16688bcb3e806bcaa5">More...</a><br /></td></tr>
+<tr class="separator:ga35303b8750609d16688bcb3e806bcaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadab2ea721a350767b2dd97aacf74e46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__compiler.html#gadab2ea721a350767b2dd97aacf74e46b">C32</a> (uint32_t cell)</td></tr>
+<tr class="memdesc:gadab2ea721a350767b2dd97aacf74e46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">compile 32-bit cell  <a href="group__compiler.html#gadab2ea721a350767b2dd97aacf74e46b">More...</a><br /></td></tr>
+<tr class="separator:gadab2ea721a350767b2dd97aacf74e46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8634c475c43442c497bc68145b4c2774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__debug.html#ga8634c475c43442c497bc68145b4c2774">dump</a> (uint32_t addr, uint32_t len)</td></tr>
+<tr class="memdesc:ga8634c475c43442c497bc68145b4c2774"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump memory  <a href="group__debug.html#ga8634c475c43442c497bc68145b4c2774">More...</a><br /></td></tr>
+<tr class="separator:ga8634c475c43442c497bc68145b4c2774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad17eaf0a442827bb4a25f3618f64b370"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sym.html#gad17eaf0a442827bb4a25f3618f64b370">sym_dump</a> ()</td></tr>
+<tr class="memdesc:gad17eaf0a442827bb4a25f3618f64b370"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump symbol table <br /></td></tr>
+<tr class="separator:gad17eaf0a442827bb4a25f3618f64b370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -107,6 +137,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__vm.html#ga952d4e944c323fa833d1945f619048ae">Fp</a> =0</td></tr>
 <tr class="memdesc:ga952d4e944c323fa833d1945f619048ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack frame pointer <br /></td></tr>
 <tr class="separator:ga952d4e944c323fa833d1945f619048ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ee403c18197e7dd5a472f5a3def38b0"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__compiler.html#ga5ee403c18197e7dd5a472f5a3def38b0">Cp</a> =0</td></tr>
+<tr class="memdesc:ga5ee403c18197e7dd5a472f5a3def38b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">compilation pointer <br /></td></tr>
+<tr class="separator:ga5ee403c18197e7dd5a472f5a3def38b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5c83c0deb570689fb83f5342cb97267"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structSYM.html">SYM</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__sym.html#gac5c83c0deb570689fb83f5342cb97267">symtable</a> = NULL</td></tr>
+<tr class="memdesc:gac5c83c0deb570689fb83f5342cb97267"><td class="mdescLeft">&#160;</td><td class="mdescRight">symbol table <br /></td></tr>
+<tr class="separator:gac5c83c0deb570689fb83f5342cb97267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
