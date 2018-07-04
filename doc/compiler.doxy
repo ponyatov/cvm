@@ -54,6 +54,13 @@ and pointers to @ref data
 
 start VM byte-code interpreter
 
+@subsection save .save
+
+`.save filename.bc` save compiled bytecode to given image file
+
+@subsection inc .inc
+
+`.inc include.script` 
 
 
 */

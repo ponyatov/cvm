@@ -1,6 +1,8 @@
 /** @page platforms Supported platforms
 
 - @ref x86 x86/amd64
+  - @ref bare86
+  - @ref kvm
   - @ref Linux
   - @ref Windows
 - @ref RT5350F (MIPS 32 v2, 350 MHz)
@@ -47,5 +49,31 @@ Commercial module for industrial and IoT automation applications.
 
 http://icbcom.ru/ru/tovar/rid-communication-modem/
 ![](https://icbcom.ru/wp-content/uploads/2018/05/RID-modem-200x200.jpg)
+
+@section x86 x86/amd64
+
+@subsection bare86 Bare-metal x86 PC
+
+Run `cvm` in OS kernel mode 
+
+@subsubsection qemu86 QEMU-system-x86
+
+@subsection kvm KVM unikernel mode
+
+Run on KVM/Xen paravirtualized virtual servers
+
+http://en.wikipedia.org/wiki/Unikernel
+
+A unikernel is a specialised, single address space machine image constructed by
+using library operating systems. A developer selects, from a modular 
+stack, the minimal set of libraries which correspond to the OS constructs 
+required for their application to run. These libraries are then compiled with 
+the application and configuration code to build sealed, fixed-purpose images 
+(unikernels) which run directly on a hypervisor or hardware without an 
+intervening OS such as Linux or Windows.
+
+@subsection Linux
+
+@subsection Windows
 
 */

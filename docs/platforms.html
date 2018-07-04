@@ -64,9 +64,11 @@ $(document).ready(function(){initNavTree('platforms.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><ul>
-<li>x86 x86/amd64<ul>
-<li>Linux</li>
-<li>Windows</li>
+<li><a class="el" href="platforms.html#x86">x86/amd64</a> x86/amd64<ul>
+<li><a class="el" href="platforms.html#bare86">Bare-metal x86 PC</a></li>
+<li><a class="el" href="platforms.html#kvm">KVM unikernel mode</a></li>
+<li><a class="el" href="platforms.html#Linux">Linux</a></li>
+<li><a class="el" href="/home/dpon/cvm/doc/platforms.doxy.html#Windows">Windows</a></li>
 </ul>
 </li>
 <li><a class="el" href="platforms.html#RT5350F">Ralink RT5350F SoC</a> (MIPS 32 v2, 350 MHz)<ul>
@@ -124,7 +126,23 @@ RID modem</h3>
 <p><a href="http://icbcom.ru/ru/tovar/rid-communication-modem/">http://icbcom.ru/ru/tovar/rid-communication-modem/</a> </p><div class="image">
 <img src="https://icbcom.ru/wp-content/uploads/2018/05/RID-modem-200x200.jpg"/>
 </div>
- </div></div><!-- contents -->
+<h1><a class="anchor" id="x86"></a>
+x86/amd64</h1>
+<h2><a class="anchor" id="bare86"></a>
+Bare-metal x86 PC</h2>
+<p>Run <code>cvm</code> in OS kernel mode</p>
+<h3><a class="anchor" id="qemu86"></a>
+QEMU-system-x86</h3>
+<h2><a class="anchor" id="kvm"></a>
+KVM unikernel mode</h2>
+<p>Run on KVM/Xen paravirtualized virtual servers</p>
+<p><a href="https://en.wikipedia.org/wiki/Unikernel">https://en.wikipedia.org/wiki/Unikernel</a></p>
+<p>A unikernel is a specialised, single address space machine image constructed by using library operating systems. A developer selects, from a modular stack, the minimal set of libraries which correspond to the OS constructs required for their application to run. These libraries are then compiled with the application and configuration code to build sealed, fixed-purpose images (unikernels) which run directly on a hypervisor or hardware without an intervening OS such as Linux or Windows.</p>
+<h2><a class="anchor" id="Linux"></a>
+Linux</h2>
+<h2><a class="anchor" id="Windows"></a>
+Windows</h2>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
