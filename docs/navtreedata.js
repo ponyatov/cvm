@@ -1,7 +1,17 @@
 var NAVTREE =
 [
   [ "cvm", "index.html", [
-    [ "Compiler", "compiler.html", null ],
+    [ "Compiler", "compiler.html", [
+      [ "syntax", "compiler.html#syntax", [
+        [ "comments", "compiler.html#comments", null ],
+        [ "labels", "compiler.html#labels", null ]
+      ] ],
+      [ "in-compiled data", "compiler.html#data", null ],
+      [ "commands", "compiler.html#commands", null ],
+      [ "directives", "compiler.html#directives", [
+        [ ".go", "compiler.html#go", null ]
+      ] ]
+    ] ],
     [ "Supported platforms", "platforms.html", [
       [ "Ralink RT5350F SoC", "platforms.html#RT5350F", [
         [ "Hi-Link HLK-RM04 v.2", "platforms.html#HLK-RM04", [

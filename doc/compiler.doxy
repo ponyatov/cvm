@@ -3,6 +3,57 @@
 Demo implementation (`cvm.exe` emulator) contains **embedded compiler**
 was written using `flex/bison` tools.
 
-You can use emulator as 
+See `demo.script` file as sample of source code syntax and available features.
+
+You can use emulator as development tool:
+- compiler
+- debugger
+- remote host uploader (send compiled firmware to remote hardware node)
+- interactive script console
+
+To start `cvm.exe` in compiler mode, you need to use this command line
+to **send source code via `stdin`**:
+```
+$ ./cvm.exe [optional precopiled bytecode image] [pa ra meters] < source.code
+```
+
+@section syntax
+
+- VM assembly
+  - @ref comments
+  - @ref commands can be entered in low-case mode
+  - @ref labels
+  - @ref data
+- @ref directives
+
+@subsection comments
+
+`# line comment`
+
+@subsection labels
+
+marks absolute addresses in code area, can be used as @ref JMP/@ref CALL parameters
+and pointers to @ref data
+
+`label:` 
+
+@section data in-compiled data
+
+@section commands
+
+|  |  |
+|--|--|
+|@ref NOP | do nothing |
+|@ref HALT | stop system |
+
+@section directives
+
+`.directive`s control code generation and VM modes
+
+@subsection go .go
+
+start VM byte-code interpreter
+
+
 
 */

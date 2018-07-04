@@ -64,7 +64,50 @@ $(document).ready(function(){initNavTree('compiler.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Demo implementation (<code>cvm.exe</code> emulator) contains <b>embedded compiler</b> was written using <code>flex/bison</code> tools.</p>
-<p>You can use emulator as </p>
+<p>See <code>demo.script</code> file as sample of source code syntax and available features.</p>
+<p>You can use emulator as development tool:</p><ul>
+<li>compiler</li>
+<li>debugger</li>
+<li>remote host uploader (send compiled firmware to remote hardware node)</li>
+<li>interactive script console</li>
+</ul>
+<p>To start <code>cvm.exe</code> in compiler mode, you need to use this command line to <b>send source code via <code>stdin</code></b>: </p><div class="fragment"><div class="line">$ ./cvm.exe [optional precopiled bytecode image] [pa ra meters] &lt; source.code</div></div><!-- fragment --><h1><a class="anchor" id="syntax"></a>
+syntax</h1>
+<ul>
+<li>VM assembly<ul>
+<li><a class="el" href="compiler.html#comments">comments</a></li>
+<li><a class="el" href="compiler.html#commands">commands</a> can be entered in low-case mode</li>
+<li><a class="el" href="compiler.html#labels">labels</a></li>
+<li><a class="el" href="compiler.html#data">in-compiled data</a></li>
+</ul>
+</li>
+<li><a class="el" href="compiler.html#directives">directives</a></li>
+</ul>
+<h2><a class="anchor" id="comments"></a>
+comments</h2>
+<p><code># line comment</code></p>
+<h2><a class="anchor" id="labels"></a>
+labels</h2>
+<p>marks absolute addresses in code area, can be used as JMP/CALL parameters and pointers to <a class="el" href="compiler.html#data">in-compiled data</a></p>
+<p><code>label:</code></p>
+<h1><a class="anchor" id="data"></a>
+in-compiled data</h1>
+<h1><a class="anchor" id="commands"></a>
+commands</h1>
+<table class="doxtable">
+<tr>
+<th></th><th></th></tr>
+<tr>
+<td><a class="el" href="group__opcode.html#ga700f88377bf36711b711f69b06c52f5d">NOP</a> </td><td>do nothing </td></tr>
+<tr>
+<td><a class="el" href="group__opcode.html#ga0de250395e6a7c0c32a34b50a6254c7d">HALT</a> </td><td>stop system </td></tr>
+</table>
+<h1><a class="anchor" id="directives"></a>
+directives</h1>
+<p><code>.directive</code>s control code generation and VM modes</p>
+<h2><a class="anchor" id="go"></a>
+.go</h2>
+<p>start VM byte-code interpreter </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
