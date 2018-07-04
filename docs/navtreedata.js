@@ -1,6 +1,7 @@
 var NAVTREE =
 [
-  [ "cvm", "index.html", [
+  [ "cvm: light Stack Virtual Machine in C for scripting on embedded systems", "index.html", [
+    [ "cvm", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
