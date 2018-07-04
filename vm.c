@@ -47,10 +47,6 @@ void M32set(uint32_t addr, uint32_t data) {
 	M[addr+3] = data >> 24;
 }
 
-uint32_t symget(char* name) { return -1; }
-
-void symset(char* name, uint32_t addr) { }
-
 void C8(uint8_t opcode) { M[Cp++] = opcode; assert(Cp < Msz); }
 void C32(uint32_t cell) { M32set(Cp,cell); Cp += sizeof(cell); assert(Cp < Msz); }
 
@@ -65,5 +61,26 @@ SYM *symtable = NULL;
 
 void sym_dump() {
 	printf("\n\nsymbol table:\n\n");
+	SYM* sym = symtable;
+	while (sym) {
+		printf("%.8X %s\n",sym,sym->name);
+		sym = (SYM*)(sym->next);
+	}
 	printf("\n");
+}
+
+//SYM* symfind(char *name) {
+//	SYM* sym = symtable;
+//	while (sym) {
+//		printf("",sym->name);
+//		sym = sym->next;
+//	}
+//}
+
+uint32_t symget(char* name) { return -1; }
+
+void symset(char* name, uint32_t addr) {
+	SYM* sym = malloc(sizeof(SYM)); assert(sym);
+	sym->next = symtable; symtable = sym;
+	sym->name = name;
 }
